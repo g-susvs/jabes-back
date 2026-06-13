@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_shared_button_links",
+  "info": {
+    "displayName": "Button Link",
+    "description": "Reusable button label and URL"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "url": {
+      "type": "string",
+      "required": true
+    },
+    "isExternal": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

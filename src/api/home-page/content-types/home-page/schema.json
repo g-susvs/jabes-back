@@ -1,0 +1,75 @@
+{
+  "kind": "singleType",
+  "collectionName": "home_pages",
+  "info": {
+    "singularName": "home-page",
+    "pluralName": "home-pages",
+    "displayName": "Home Page",
+    "description": "Editable content for the public home page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "heroTitle": {
+      "type": "string",
+      "required": true
+    },
+    "heroTitleHighlight": {
+      "type": "string"
+    },
+    "heroSubtitle": {
+      "type": "text"
+    },
+    "heroImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "servicesTitle": {
+      "type": "string"
+    },
+    "servicesDescription": {
+      "type": "text"
+    },
+    "servicesButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.button-link"
+    },
+    "featuredServices": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::service.service"
+    },
+    "productsTitle": {
+      "type": "string"
+    },
+    "productsDescription": {
+      "type": "text"
+    },
+    "productCardActionLabel": {
+      "type": "string",
+      "default": "Ver detalles"
+    },
+    "productsButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.button-link"
+    },
+    "featuredProducts": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::product.product"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    }
+  }
+}
