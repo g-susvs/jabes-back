@@ -40,7 +40,12 @@ const config: Core.Config.Middlewares = [
     },
   },
   'strapi::poweredBy',
-  'strapi::query',
+  {
+    name: 'strapi::query',
+    config: {
+      comma: true,
+    },
+  },
   'strapi::body',
   'strapi::session',
   'strapi::favicon',
