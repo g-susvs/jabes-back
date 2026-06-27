@@ -617,6 +617,8 @@ export interface ApiProductsPageProductsPage extends Struct.SingleTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
+    allCategoriesLabel: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Todas las categorias'>;
     bannerDescription: Schema.Attribute.Text;
     bannerTitle: Schema.Attribute.String & Schema.Attribute.Required;
     createdAt: Schema.Attribute.DateTime;
@@ -631,6 +633,8 @@ export interface ApiProductsPageProductsPage extends Struct.SingleTypeSchema {
       'api::products-page.products-page'
     > &
       Schema.Attribute.Private;
+    productCardActionLabel: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Ver detalles'>;
     publishedAt: Schema.Attribute.DateTime;
     seo: Schema.Attribute.Component<'shared.seo', false>;
     updatedAt: Schema.Attribute.DateTime;

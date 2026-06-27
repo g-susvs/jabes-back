@@ -28,6 +28,14 @@
     "emptyStateDescription": {
       "type": "text"
     },
+    "allCategoriesLabel": {
+      "type": "string",
+      "default": "Todas las categorias"
+    },
+    "productCardActionLabel": {
+      "type": "string",
+      "default": "Ver detalles"
+    },
     "seo": {
       "type": "component",
       "repeatable": false,
