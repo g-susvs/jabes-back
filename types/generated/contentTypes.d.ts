@@ -523,6 +523,50 @@ export interface ApiHomePageHomePage extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiProductDetailPageProductDetailPage
+  extends Struct.SingleTypeSchema {
+  collectionName: 'product_detail_pages';
+  info: {
+    description: 'Editable content for the product detail page';
+    displayName: 'Product Detail Page';
+    pluralName: 'product-detail-pages';
+    singularName: 'product-detail-page';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    detailAction: Schema.Attribute.String &
+      Schema.Attribute.Required &
+      Schema.Attribute.DefaultTo<'Consultar por WhatsApp'>;
+    detailExtraInfo: Schema.Attribute.Text &
+      Schema.Attribute.DefaultTo<'Cont\u00E1ctanos para obtener informaci\u00F3n sobre precios, disponibilidad y opciones de entrega'>;
+    detailSubtitle: Schema.Attribute.String &
+      Schema.Attribute.Required &
+      Schema.Attribute.DefaultTo<'Caracter\u00EDsticas:'>;
+    headerAction: Schema.Attribute.String &
+      Schema.Attribute.Required &
+      Schema.Attribute.DefaultTo<'Volver a los productos'>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::product-detail-page.product-detail-page'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    relatedProductsTitle: Schema.Attribute.String &
+      Schema.Attribute.Required &
+      Schema.Attribute.DefaultTo<'Productos relacionados'>;
+    seo: Schema.Attribute.Component<'shared.seo', false>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiProductProduct extends Struct.CollectionTypeSchema {
   collectionName: 'products';
   info: {
@@ -1218,6 +1262,7 @@ declare module '@strapi/strapi' {
       'admin::user': AdminUser;
       'api::category.category': ApiCategoryCategory;
       'api::home-page.home-page': ApiHomePageHomePage;
+      'api::product-detail-page.product-detail-page': ApiProductDetailPageProductDetailPage;
       'api::product.product': ApiProductProduct;
       'api::products-page.products-page': ApiProductsPageProductsPage;
       'api::service.service': ApiServiceService;

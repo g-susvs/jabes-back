@@ -1,0 +1,45 @@
+{
+  "kind": "singleType",
+  "collectionName": "product_detail_pages",
+  "info": {
+    "singularName": "product-detail-page",
+    "pluralName": "product-detail-pages",
+    "displayName": "Product Detail Page",
+    "description": "Editable content for the product detail page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "headerAction": {
+      "type": "string",
+      "required": true,
+      "default": "Volver a los productos"
+    },
+    "detailSubtitle": {
+      "type": "string",
+      "required": true,
+      "default": "Características:"
+    },
+    "detailAction": {
+      "type": "string",
+      "required": true,
+      "default": "Consultar por WhatsApp"
+    },
+    "detailExtraInfo": {
+      "type": "text",
+      "default": "Contáctanos para obtener información sobre precios, disponibilidad y opciones de entrega"
+    },
+    "relatedProductsTitle": {
+      "type": "string",
+      "required": true,
+      "default": "Productos relacionados"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    }
+  }
+}
