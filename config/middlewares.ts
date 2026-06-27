@@ -33,7 +33,9 @@ const config: Core.Config.Middlewares = [
     name: 'strapi::cors',
     config: {
       enabled: true,
-      origin: ['http://localhost:3000', 'http://127.0.0.1:3000'],
+      origin: process.env.CORS_ORIGIN 
+        ? process.env.CORS_ORIGIN.split(',') 
+        : ['*'], // Permite todos los dominios por defecto, ideal para Vercel previews
       methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'HEAD', 'OPTIONS'],
       headers: ['Content-Type', 'Authorization', 'Origin', 'Accept'],
       keepHeaderOnError: true,
