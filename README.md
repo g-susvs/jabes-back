@@ -1,61 +1,82 @@
-# 🚀 Getting started with Strapi
+# Jabes — CMS (jabes-back)
 
-Strapi comes with a full featured [Command Line Interface](https://docs.strapi.io/dev-docs/cli) (CLI) which lets you scaffold and manage your project in seconds.
+CMS headless construido con [Strapi 5](https://strapi.io) para el sitio de vivero y jardinería **Jabes**. Expone vía API REST todo el contenido editable del frontend (páginas, productos, servicios, categorías y ajustes del sitio) y gestiona la subida de imágenes a **Cloudinary**.
 
-### `develop`
+## 🧱 Stack
 
-Start your Strapi application with autoReload enabled. [Learn more](https://docs.strapi.io/dev-docs/cli#strapi-develop)
+- **Strapi** `5.48.0` (TypeScript)
+- **Base de datos:** SQLite (`better-sqlite3`) por defecto
+- **Provider de subida:** `@strapi/provider-upload-cloudinary` — las imágenes se almacenan en Cloudinary, no en disco
+- **Node:** `>=20.0.0 <=24.x.x`
 
+## ✨ Cambios respecto al proyecto inicial
+
+- Se integró el **plugin de subida a Cloudinary** (`@strapi/provider-upload-cloudinary`). Toda imagen cargada desde el admin de Strapi se sube a la carpeta `jabes` en Cloudinary y se sirve desde `res.cloudinary.com`. Configurado en [`config/plugins.ts`](config/plugins.ts).
+- Se ajustó la política de seguridad (CSP) en [`config/middlewares.ts`](config/middlewares.ts) para permitir imágenes y media desde `res.cloudinary.com`.
+- Se habilitó **CORS** configurable por entorno mediante `CORS_ORIGIN` (varios orígenes separados por coma; por defecto `*`).
+
+## 📦 Modelo de contenido
+
+**Single Types** (páginas, una sola instancia):
+- `home-page` — contenido de la página de inicio (hero, servicios y productos destacados)
+- `services-page` — página de servicios
+- `products-page` — página de productos
+- `product-detail-page` — plantilla del detalle de producto
+- `site-setting` — ajustes globales del sitio
+
+**Collection Types** (registros múltiples):
+- `product` — productos
+- `service` — servicios
+- `category` — categorías de productos
+
+**Componentes compartidos** (`src/components/shared`): `seo`, `feature`, `cta`, `button-link`, `nav-link`, `social-link`.
+
+## 🔑 Variables de entorno
+
+Copia `.env.example` a `.env` y completa los valores. Las claves de Cloudinary son obligatorias para la subida de imágenes:
+
+```bash
+HOST=0.0.0.0
+PORT=1337
+APP_KEYS="..."
+API_TOKEN_SALT=...
+ADMIN_JWT_SECRET=...
+TRANSFER_TOKEN_SALT=...
+JWT_SECRET=...
+ENCRYPTION_KEY=...
+
+# Cloudinary (subida de imágenes)
+CLOUDINARY_NAME=your_cloud_name
+CLOUDINARY_KEY=your_api_key
+CLOUDINARY_SECRET=your_api_secret
+
+# Orígenes permitidos para CORS (separados por coma). Vacío = "*"
+CORS_ORIGIN=
 ```
-npm run develop
-# or
-yarn develop
+
+## 🚀 Puesta en marcha
+
+```bash
+npm install
+npm run develop   # modo desarrollo con autoReload (admin en http://localhost:1337/admin)
 ```
 
-### `start`
+### Scripts disponibles
 
-Start your Strapi application with autoReload disabled. [Learn more](https://docs.strapi.io/dev-docs/cli#strapi-start)
+| Script | Descripción |
+| --- | --- |
+| `npm run develop` / `npm run dev` | Inicia Strapi con autoReload (desarrollo) |
+| `npm run start` | Inicia Strapi sin autoReload (producción) |
+| `npm run build` | Compila el panel de administración |
+| `npm run seed` | Compila y ejecuta el seed de datos (`dist/src/seed.js`) |
+| `npm run console` | Abre la consola de Strapi |
+| `npm run upgrade` | Actualiza Strapi a la última versión |
 
-```
-npm run start
-# or
-yarn start
-```
+## ⚙️ Despliegue
 
-### `build`
+Strapi admite múltiples opciones de despliegue (incluido [Strapi Cloud](https://cloud.strapi.io)). Consulta la [documentación de despliegue](https://docs.strapi.io/dev-docs/deployment). Recuerda definir las variables de entorno (incluidas las de Cloudinary y `CORS_ORIGIN` con el dominio del frontend) en el proveedor.
 
-Build your admin panel. [Learn more](https://docs.strapi.io/dev-docs/cli#strapi-build)
+## 📚 Recursos
 
-```
-npm run build
-# or
-yarn build
-```
-
-## ⚙️ Deployment
-
-Strapi gives you many possible deployment options for your project including [Strapi Cloud](https://cloud.strapi.io). Browse the [deployment section of the documentation](https://docs.strapi.io/dev-docs/deployment) to find the best solution for your use case.
-
-```
-yarn strapi deploy
-```
-
-## 📚 Learn more
-
-- [Resource center](https://strapi.io/resource-center) - Strapi resource center.
-- [Strapi documentation](https://docs.strapi.io) - Official Strapi documentation.
-- [Strapi tutorials](https://strapi.io/tutorials) - List of tutorials made by the core team and the community.
-- [Strapi blog](https://strapi.io/blog) - Official Strapi blog containing articles made by the Strapi team and the community.
-- [Changelog](https://strapi.io/changelog) - Find out about the Strapi product updates, new features and general improvements.
-
-Feel free to check out the [Strapi GitHub repository](https://github.com/strapi/strapi). Your feedback and contributions are welcome!
-
-## ✨ Community
-
-- [Discord](https://discord.strapi.io) - Come chat with the Strapi community including the core team.
-- [Forum](https://forum.strapi.io/) - Place to discuss, ask questions and find answers, show your Strapi project and get feedback or just talk with other Community members.
-- [Awesome Strapi](https://github.com/strapi/awesome-strapi) - A curated list of awesome things related to Strapi.
-
----
-
-<sub>🤫 Psst! [Strapi is hiring](https://strapi.io/careers).</sub>
+- [Documentación de Strapi](https://docs.strapi.io)
+- [Provider de Cloudinary para Strapi](https://www.npmjs.com/package/@strapi/provider-upload-cloudinary)
