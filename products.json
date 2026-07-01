@@ -1,0 +1,301 @@
+[
+  {
+    "name": "Grass americano",
+    "description": "Césped de hoja ancha, resistente y de rápido crecimiento, ideal para jardines y áreas de alto tránsito.",
+    "features": [
+      "Hoja ancha y color verde intenso",
+      "Resistente al pisoteo y alto tránsito",
+      "Rápido crecimiento y cobertura",
+      "Ideal para jardines residenciales"
+    ],
+    "image": "images/grass-americano.jpg",
+    "category": "plantas-y-grass",
+    "price": null
+  },
+  {
+    "name": "Grass chino",
+    "description": "Césped de hoja fina y tupida que forma una alfombra densa y pareja, perfecta para jardines decorativos.",
+    "features": [
+      "Hoja fina y tupida",
+      "Textura densa tipo alfombra",
+      "Aspecto uniforme y decorativo",
+      "Bajo mantenimiento"
+    ],
+    "image": "images/grass-chino.jpg",
+    "category": "plantas-y-grass",
+    "price": null
+  },
+  {
+    "name": "Grass paspalo",
+    "description": "Césped rústico y muy resistente a la sequía y al pisoteo, recomendado para climas cálidos.",
+    "features": [
+      "Muy resistente a la sequía",
+      "Tolera el pisoteo y el sol directo",
+      "Ideal para climas cálidos",
+      "Bajo requerimiento de riego"
+    ],
+    "image": "images/grass-paspalo.jpg",
+    "category": "plantas-y-grass",
+    "price": null
+  },
+  {
+    "name": "Grass Bermuda",
+    "description": "Césped de hoja fina y gran resistencia, de rápida recuperación y bajo mantenimiento.",
+    "features": [
+      "Hoja fina y densa",
+      "Rápida recuperación ante el desgaste",
+      "Alta resistencia al calor",
+      "Ideal para áreas deportivas y jardines"
+    ],
+    "image": "images/grass-bermuda.jpg",
+    "category": "plantas-y-grass",
+    "price": null
+  },
+  {
+    "name": "Abonos",
+    "description": "Abono orgánico que nutre el suelo y favorece el crecimiento sano de plantas y cultivos.",
+    "features": [
+      "Rico en nutrientes",
+      "Ideal para huertos y jardines",
+      "Mejora la fertilidad del suelo",
+      "Favorece plantas más sanas"
+    ],
+    "image": "images/abonos.jpg",
+    "category": "fertilizantes-y-abonos",
+    "price": null
+  },
+  {
+    "name": "Tierra preparada",
+    "description": "Mezcla lista para sembrar, con nutrientes balanceados para macetas y jardines.",
+    "features": [
+      "Lista para usar",
+      "Nutrientes balanceados",
+      "Buena retención de humedad",
+      "Ideal para macetas y trasplantes"
+    ],
+    "image": "images/tierra-preparada.jpg",
+    "category": "tierras-y-sustratos",
+    "price": null
+  },
+  {
+    "name": "Musgo",
+    "description": "Musgo natural que retiene la humedad y decora macetas, terrarios y arreglos florales.",
+    "features": [
+      "Retiene la humedad",
+      "Uso decorativo en macetas y terrarios",
+      "Natural y liviano",
+      "Ideal para arreglos florales"
+    ],
+    "image": "images/musgo.jpg",
+    "category": "tierras-y-sustratos",
+    "price": null
+  },
+  {
+    "name": "Compost",
+    "description": "Compost orgánico rico en nutrientes que mejora la fertilidad y estructura del suelo.",
+    "features": [
+      "Rico en nutrientes",
+      "Ideal para huertos y jardines",
+      "Incrementa la actividad microbiana",
+      "Libre de químicos"
+    ],
+    "image": "images/compost.jpg",
+    "category": "fertilizantes-y-abonos",
+    "price": null
+  },
+  {
+    "name": "Humus",
+    "description": "Humus de lombriz, fertilizante 100% orgánico que potencia el desarrollo de las plantas.",
+    "features": [
+      "100% orgánico",
+      "Humus de lombriz",
+      "Mejora la estructura del suelo",
+      "Estimula el crecimiento de raíces"
+    ],
+    "image": "images/humus.jpg",
+    "category": "fertilizantes-y-abonos",
+    "price": null
+  },
+  {
+    "name": "Guano de res",
+    "description": "Abono natural de ganado vacuno, ideal para enriquecer el suelo antes de la siembra.",
+    "features": [
+      "Abono 100% natural",
+      "Enriquece el suelo antes de sembrar",
+      "Aporta materia orgánica",
+      "Ideal para huertos y cultivos"
+    ],
+    "image": "images/guano-res.jpg",
+    "category": "fertilizantes-y-abonos",
+    "price": null
+  },
+  {
+    "name": "Viruta",
+    "description": "Viruta de madera que sirve como cobertura, mejora la aireación y retiene la humedad del suelo.",
+    "features": [
+      "Cobertura protectora del suelo",
+      "Mejora la aireación",
+      "Retiene la humedad",
+      "Controla el crecimiento de malezas"
+    ],
+    "image": "images/viruta.jpg",
+    "category": "tierras-y-sustratos",
+    "price": null
+  },
+  {
+    "name": "Guano de caballo",
+    "description": "Abono orgánico equino que aporta nutrientes y mejora la estructura de la tierra.",
+    "features": [
+      "Abono orgánico equino",
+      "Aporta nutrientes al suelo",
+      "Mejora la estructura de la tierra",
+      "Ideal para preparar terrenos"
+    ],
+    "image": "images/guano-caballo.jpg",
+    "category": "fertilizantes-y-abonos",
+    "price": null
+  },
+  {
+    "name": "Granalla",
+    "description": "Piedra decorativa de tamaño pequeño, ideal para cubrir macetas, jardines y senderos.",
+    "features": [
+      "Piedra decorativa de grano pequeño",
+      "Ideal para macetas y senderos",
+      "Mejora el drenaje del suelo",
+      "Acabado ornamental y duradero"
+    ],
+    "image": "images/granalla.jpg",
+    "category": "piedras-decorativas",
+    "price": null
+  },
+  {
+    "name": "Tierra negra",
+    "description": "Tierra fértil y suelta, rica en materia orgánica, perfecta para sembrar y trasplantar.",
+    "features": [
+      "Rica en materia orgánica",
+      "Suelta y fácil de trabajar",
+      "Buena retención de humedad",
+      "Ideal para sembrar y trasplantar"
+    ],
+    "image": "images/tierra-negra.jpg",
+    "category": "tierras-y-sustratos",
+    "price": null
+  },
+  {
+    "name": "Cactus",
+    "description": "Planta ornamental de bajo mantenimiento y gran resistencia, ideal para interiores y exteriores.",
+    "features": [
+      "Bajo mantenimiento",
+      "Resistente a la sequía",
+      "Ideal para interiores y exteriores",
+      "Gran variedad de formas y tamaños"
+    ],
+    "image": "images/cactus.jpg",
+    "category": "plantas-y-grass",
+    "price": null
+  },
+  {
+    "name": "Orquídeas",
+    "description": "Planta ornamental de flores elegantes y duraderas, ideal para decorar espacios interiores.",
+    "features": [
+      "Flores elegantes y duraderas",
+      "Ideal para decoración interior",
+      "Variedad de colores",
+      "Floración prolongada"
+    ],
+    "image": "images/orquideas.jpg",
+    "category": "plantas-y-grass",
+    "price": null
+  },
+  {
+    "name": "Plantas ornamentales",
+    "description": "Variedad de plantas decorativas para embellecer jardines, patios y espacios interiores.",
+    "features": [
+      "Gran variedad de especies",
+      "Ideales para jardines y patios",
+      "Aportan color y frescura",
+      "Opciones para interior y exterior"
+    ],
+    "image": "images/plantas-ornamentales.jpeg",
+    "category": "plantas-y-grass",
+    "price": null
+  },
+  {
+    "name": "Buganvilia roja",
+    "description": "Arbusto trepador de vistosas flores rojas, resistente al sol y de floración abundante.",
+    "features": [
+      "Flores rojas vistosas",
+      "Floración abundante",
+      "Resistente al sol y la sequía",
+      "Ideal para cercos y pérgolas"
+    ],
+    "image": "images/buganvilia-roja.jpeg",
+    "category": "plantas-y-grass",
+    "price": null
+  },
+  {
+    "name": "Buganvilia fucsia",
+    "description": "Arbusto trepador de intensas flores fucsia, ideal para cercos, pérgolas y jardines soleados.",
+    "features": [
+      "Flores fucsia intensas",
+      "Ideal para cercos y pérgolas",
+      "Resistente a climas cálidos",
+      "Floración abundante y prolongada"
+    ],
+    "image": "images/buganvilia-fucsia.jpeg",
+    "category": "plantas-y-grass",
+    "price": null
+  },
+  {
+    "name": "Buganvilia rosada",
+    "description": "Arbusto trepador de delicadas flores rosadas, de floración abundante y fácil cuidado.",
+    "features": [
+      "Flores rosadas delicadas",
+      "Floración abundante",
+      "Fácil cuidado",
+      "Resistente al sol"
+    ],
+    "image": "images/buganvilia-rosada.jpeg",
+    "category": "plantas-y-grass",
+    "price": null
+  },
+  {
+    "name": "Plumbago",
+    "description": "Arbusto ornamental de flores celestes, ideal para cercos y jardines de clima cálido.",
+    "features": [
+      "Flores celestes llamativas",
+      "Ideal para cercos vivos",
+      "Resistente a climas cálidos",
+      "Floración prolongada"
+    ],
+    "image": "images/plumbago.jpeg",
+    "category": "plantas-y-grass",
+    "price": null
+  },
+  {
+    "name": "Palmera botella",
+    "description": "Palmera ornamental de tronco en forma de botella, perfecta como planta focal en jardines.",
+    "features": [
+      "Tronco característico en forma de botella",
+      "Planta focal decorativa",
+      "Bajo mantenimiento",
+      "Ideal para exteriores"
+    ],
+    "image": "images/palmera-botella.jpeg",
+    "category": "plantas-y-grass",
+    "price": null
+  },
+  {
+    "name": "Ciprés",
+    "description": "Árbol de follaje verde y forma columnar, ideal para cercos vivos y jardines elegantes.",
+    "features": [
+      "Follaje verde y denso",
+      "Forma columnar elegante",
+      "Ideal para cercos vivos",
+      "Resistente y de fácil cuidado"
+    ],
+    "image": "images/cipres.jpeg",
+    "category": "plantas-y-grass",
+    "price": null
+  }
+]

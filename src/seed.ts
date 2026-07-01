@@ -90,7 +90,7 @@ async function run() {
   const strapi = createStrapi({ distDir: './dist' });
   await strapi.load();
 
-  // process.cwd() es jabes-back; subimos un nivel a la carpeta jabes
+  // TODO: ajustar path segun donde esté ubicado el script de seed, para que encuentre el JSON de productos
   const dataDir = path.join(process.cwd(), '..', 'products-real-data');
   const dataPath = path.join(dataDir, 'products.json');
 
