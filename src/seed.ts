@@ -90,8 +90,8 @@ async function run() {
   const strapi = createStrapi({ distDir: './dist' });
   await strapi.load();
 
-  // TODO: ajustar path segun donde esté ubicado el script de seed, para que encuentre el JSON de productos
-  const dataDir = path.join(process.cwd(), '..', 'products-real-data');
+  // TODO: ajustar path segun donde esté ubicado el script de seed, para que encuentre el JSON de productos - movel el archivo products.json dentro de esa carpeta
+  const dataDir = path.join(process.cwd(), '..', 'products-data-mock');
   const dataPath = path.join(dataDir, 'products.json');
 
   if (!fs.existsSync(dataPath)) {

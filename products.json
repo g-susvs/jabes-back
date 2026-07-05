@@ -1,6 +1,6 @@
 [
   {
-    "name": "Grass americano",
+    "name": "Grass americano x 1 m2",
     "description": "Césped de hoja ancha, resistente y de rápido crecimiento, ideal para jardines y áreas de alto tránsito.",
     "features": [
       "Hoja ancha y color verde intenso",
@@ -10,10 +10,10 @@
     ],
     "image": "images/grass-americano.jpg",
     "category": "plantas-y-grass",
-    "price": null
+    "price": 14
   },
   {
-    "name": "Grass chino",
+    "name": "Grass chino x 1 m2",
     "description": "Césped de hoja fina y tupida que forma una alfombra densa y pareja, perfecta para jardines decorativos.",
     "features": [
       "Hoja fina y tupida",
@@ -23,10 +23,10 @@
     ],
     "image": "images/grass-chino.jpg",
     "category": "plantas-y-grass",
-    "price": null
+    "price": 25
   },
   {
-    "name": "Grass paspalo",
+    "name": "Grass paspalum x 1 m2",
     "description": "Césped rústico y muy resistente a la sequía y al pisoteo, recomendado para climas cálidos.",
     "features": [
       "Muy resistente a la sequía",
@@ -36,10 +36,10 @@
     ],
     "image": "images/grass-paspalo.jpg",
     "category": "plantas-y-grass",
-    "price": null
+    "price": 19
   },
   {
-    "name": "Grass Bermuda",
+    "name": "Grass Bermuda x 1 m2",
     "description": "Césped de hoja fina y gran resistencia, de rápida recuperación y bajo mantenimiento.",
     "features": [
       "Hoja fina y densa",
@@ -49,10 +49,10 @@
     ],
     "image": "images/grass-bermuda.jpg",
     "category": "plantas-y-grass",
-    "price": null
+    "price": 17
   },
   {
-    "name": "Abonos",
+    "name": "Abono de vaca x 20kg",
     "description": "Abono orgánico que nutre el suelo y favorece el crecimiento sano de plantas y cultivos.",
     "features": [
       "Rico en nutrientes",
@@ -62,10 +62,10 @@
     ],
     "image": "images/abonos.jpg",
     "category": "fertilizantes-y-abonos",
-    "price": null
+    "price": 14.5
   },
   {
-    "name": "Tierra preparada",
+    "name": "Tierra preparada x 25kg",
     "description": "Mezcla lista para sembrar, con nutrientes balanceados para macetas y jardines.",
     "features": [
       "Lista para usar",
@@ -75,10 +75,10 @@
     ],
     "image": "images/tierra-preparada.jpg",
     "category": "tierras-y-sustratos",
-    "price": null
+    "price": 15
   },
   {
-    "name": "Musgo",
+    "name": "Musgo x 4kg",
     "description": "Musgo natural que retiene la humedad y decora macetas, terrarios y arreglos florales.",
     "features": [
       "Retiene la humedad",
@@ -88,10 +88,10 @@
     ],
     "image": "images/musgo.jpg",
     "category": "tierras-y-sustratos",
-    "price": null
+    "price": 8.5
   },
   {
-    "name": "Compost",
+    "name": "Compost x 10kg",
     "description": "Compost orgánico rico en nutrientes que mejora la fertilidad y estructura del suelo.",
     "features": [
       "Rico en nutrientes",
@@ -101,10 +101,10 @@
     ],
     "image": "images/compost.jpg",
     "category": "fertilizantes-y-abonos",
-    "price": null
+    "price": 6.9
   },
   {
-    "name": "Humus",
+    "name": "Humus de lombriz x 30kg",
     "description": "Humus de lombriz, fertilizante 100% orgánico que potencia el desarrollo de las plantas.",
     "features": [
       "100% orgánico",
@@ -114,10 +114,10 @@
     ],
     "image": "images/humus.jpg",
     "category": "fertilizantes-y-abonos",
-    "price": null
+    "price": 21.9
   },
   {
-    "name": "Guano de res",
+    "name": "Guano de res (abono de vaca) x 20kg",
     "description": "Abono natural de ganado vacuno, ideal para enriquecer el suelo antes de la siembra.",
     "features": [
       "Abono 100% natural",
@@ -127,10 +127,10 @@
     ],
     "image": "images/guano-res.jpg",
     "category": "fertilizantes-y-abonos",
-    "price": null
+    "price": 14.5
   },
   {
-    "name": "Viruta",
+    "name": "Viruta blanca x 5kg",
     "description": "Viruta de madera que sirve como cobertura, mejora la aireación y retiene la humedad del suelo.",
     "features": [
       "Cobertura protectora del suelo",
@@ -140,10 +140,10 @@
     ],
     "image": "images/viruta.jpg",
     "category": "tierras-y-sustratos",
-    "price": null
+    "price": 9
   },
   {
-    "name": "Guano de caballo",
+    "name": "Guano de caballo x 20kg (aprox.)",
     "description": "Abono orgánico equino que aporta nutrientes y mejora la estructura de la tierra.",
     "features": [
       "Abono orgánico equino",
@@ -153,10 +153,10 @@
     ],
     "image": "images/guano-caballo.jpg",
     "category": "fertilizantes-y-abonos",
-    "price": null
+    "price": 16
   },
   {
-    "name": "Granalla",
+    "name": "Granalla negra x 40kg",
     "description": "Piedra decorativa de tamaño pequeño, ideal para cubrir macetas, jardines y senderos.",
     "features": [
       "Piedra decorativa de grano pequeño",
@@ -166,10 +166,10 @@
     ],
     "image": "images/granalla.jpg",
     "category": "piedras-decorativas",
-    "price": null
+    "price": 45
   },
   {
-    "name": "Tierra negra",
+    "name": "Tierra negra de musgo x 8kg",
     "description": "Tierra fértil y suelta, rica en materia orgánica, perfecta para sembrar y trasplantar.",
     "features": [
       "Rica en materia orgánica",
@@ -179,10 +179,10 @@
     ],
     "image": "images/tierra-negra.jpg",
     "category": "tierras-y-sustratos",
-    "price": null
+    "price": 10.5
   },
   {
-    "name": "Cactus",
+    "name": "Cactus (maceta pequeña)",
     "description": "Planta ornamental de bajo mantenimiento y gran resistencia, ideal para interiores y exteriores.",
     "features": [
       "Bajo mantenimiento",
@@ -192,10 +192,10 @@
     ],
     "image": "images/cactus.jpg",
     "category": "plantas-y-grass",
-    "price": null
+    "price": 12
   },
   {
-    "name": "Orquídeas",
+    "name": "Orquídeas (planta en maceta)",
     "description": "Planta ornamental de flores elegantes y duraderas, ideal para decorar espacios interiores.",
     "features": [
       "Flores elegantes y duraderas",
@@ -205,10 +205,10 @@
     ],
     "image": "images/orquideas.jpg",
     "category": "plantas-y-grass",
-    "price": null
+    "price": 45
   },
   {
-    "name": "Plantas ornamentales",
+    "name": "Plantas ornamentales (variedad surtida)",
     "description": "Variedad de plantas decorativas para embellecer jardines, patios y espacios interiores.",
     "features": [
       "Gran variedad de especies",
@@ -218,10 +218,10 @@
     ],
     "image": "images/plantas-ornamentales.jpeg",
     "category": "plantas-y-grass",
-    "price": null
+    "price": 25
   },
   {
-    "name": "Buganvilia roja",
+    "name": "Buganvilia roja (Enredadera) x 1.50m",
     "description": "Arbusto trepador de vistosas flores rojas, resistente al sol y de floración abundante.",
     "features": [
       "Flores rojas vistosas",
@@ -231,10 +231,10 @@
     ],
     "image": "images/buganvilia-roja.jpeg",
     "category": "plantas-y-grass",
-    "price": null
+    "price": 30
   },
   {
-    "name": "Buganvilia fucsia",
+    "name": "Buganvilia fucsia (Enredadera) x 1.50m",
     "description": "Arbusto trepador de intensas flores fucsia, ideal para cercos, pérgolas y jardines soleados.",
     "features": [
       "Flores fucsia intensas",
@@ -244,10 +244,10 @@
     ],
     "image": "images/buganvilia-fucsia.jpeg",
     "category": "plantas-y-grass",
-    "price": null
+    "price": 30
   },
   {
-    "name": "Buganvilia rosada",
+    "name": "Buganvilia rosada (Enredadera) x 1.50m",
     "description": "Arbusto trepador de delicadas flores rosadas, de floración abundante y fácil cuidado.",
     "features": [
       "Flores rosadas delicadas",
@@ -257,10 +257,10 @@
     ],
     "image": "images/buganvilia-rosada.jpeg",
     "category": "plantas-y-grass",
-    "price": null
+    "price": 30
   },
   {
-    "name": "Plumbago",
+    "name": "Plumbago (arbusto)",
     "description": "Arbusto ornamental de flores celestes, ideal para cercos y jardines de clima cálido.",
     "features": [
       "Flores celestes llamativas",
@@ -270,10 +270,10 @@
     ],
     "image": "images/plumbago.jpeg",
     "category": "plantas-y-grass",
-    "price": null
+    "price": 28
   },
   {
-    "name": "Palmera botella",
+    "name": "Palmera botella (Beaucarnea)",
     "description": "Palmera ornamental de tronco en forma de botella, perfecta como planta focal en jardines.",
     "features": [
       "Tronco característico en forma de botella",
@@ -283,10 +283,10 @@
     ],
     "image": "images/palmera-botella.jpeg",
     "category": "plantas-y-grass",
-    "price": null
+    "price": 90
   },
   {
-    "name": "Ciprés",
+    "name": "Ciprés Limón x 70cm",
     "description": "Árbol de follaje verde y forma columnar, ideal para cercos vivos y jardines elegantes.",
     "features": [
       "Follaje verde y denso",
@@ -296,6 +296,6 @@
     ],
     "image": "images/cipres.jpeg",
     "category": "plantas-y-grass",
-    "price": null
+    "price": 60
   }
 ]
