@@ -14,6 +14,8 @@ CMS headless construido con [Strapi 5](https://strapi.io) para el sitio de viver
 - Se integró el **plugin de subida a Cloudinary** (`@strapi/provider-upload-cloudinary`). Toda imagen cargada desde el admin de Strapi se sube a la carpeta `jabes` en Cloudinary y se sirve desde `res.cloudinary.com`. Configurado en [`config/plugins.ts`](config/plugins.ts).
 - Se ajustó la política de seguridad (CSP) en [`config/middlewares.ts`](config/middlewares.ts) para permitir imágenes y media desde `res.cloudinary.com`.
 - Se habilitó **CORS** configurable por entorno mediante `CORS_ORIGIN` (varios orígenes separados por coma; por defecto `*`).
+- Se agregó el campo **`price`** (tipo `decimal`) al content-type `product` para manejar el precio de cada producto.
+- Se creó un **seed** que carga los productos reales del negocio y sube sus imágenes a Cloudinary (ver sección [🌱 Seed de datos](#-seed-de-datos)).
 
 ## 📦 Modelo de contenido
 
@@ -25,7 +27,7 @@ CMS headless construido con [Strapi 5](https://strapi.io) para el sitio de viver
 - `site-setting` — ajustes globales del sitio
 
 **Collection Types** (registros múltiples):
-- `product` — productos
+- `product` — productos. Campos: `name`, `slug`, `description`, **`price`** (`decimal`), `features` (componente `shared.feature`), `image`, `gallery`, `category`, `seo`, `active`, `featured`
 - `service` — servicios
 - `category` — categorías de productos
 
@@ -68,9 +70,27 @@ npm run develop   # modo desarrollo con autoReload (admin en http://localhost:13
 | `npm run develop` / `npm run dev` | Inicia Strapi con autoReload (desarrollo) |
 | `npm run start` | Inicia Strapi sin autoReload (producción) |
 | `npm run build` | Compila el panel de administración |
-| `npm run seed` | Compila y ejecuta el seed de datos (`dist/src/seed.js`) |
+| `npm run seed` | Compila y ejecuta el seed de productos (ver [🌱 Seed de datos](#-seed-de-datos)) |
 | `npm run console` | Abre la consola de Strapi |
 | `npm run upgrade` | Actualiza Strapi a la última versión |
+
+## 🌱 Seed de datos
+
+El script [`src/seed.ts`](src/seed.ts) carga los productos reales del negocio al CMS. Se ejecuta con:
+
+```bash
+npm run seed
+```
+
+Qué hace, a grandes rasgos:
+
+1. **Lee** el catálogo desde `../products-real-data/products.json` (nombre, descripción, features, imagen, categoría y precio).
+2. **Limpia** el catálogo actual: elimina los productos existentes y sus imágenes en Cloudinary, para regenerar todo desde cero (las categorías se conservan). ⚠️ Es un proceso **destructivo**.
+3. **Crea o reutiliza** las categorías por su `slug`.
+4. **Sube cada imagen a Cloudinary** (vía el provider de upload) y la enlaza al producto.
+5. **Crea los productos** con sus `features`, `price`, imagen y categoría, publicados y listos para el frontend.
+
+> Requiere las variables `CLOUDINARY_NAME`, `CLOUDINARY_KEY` y `CLOUDINARY_SECRET` definidas en el `.env`. Las imágenes deben existir en `products-real-data/images/`.
 
 ## ⚙️ Despliegue
 

@@ -24,6 +24,9 @@
     "description": {
       "type": "text"
     },
+    "price": {
+      "type": "decimal"
+    },
     "features": {
       "type": "component",
       "repeatable": true,
